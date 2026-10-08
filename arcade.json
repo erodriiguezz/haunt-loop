@@ -1,0 +1,50 @@
+{
+  "schema": "arcade/v0",
+  "slug": "haunt-loop",
+  "title": "Haunt Loop",
+  "description": "Guide Nullie, the ghost of a null pointer, through levels that look trivial and are absolutely not. Floors drop, spikes pop, the exit runs away, and the spec changes the moment you learn it.\nA rage platformer about developer pain. Every death teaches you something. Mostly humility.",
+  "tags": [
+    "platformer",
+    "rage",
+    "troll",
+    "pixel-art",
+    "short-session",
+    "dev-humor"
+  ],
+  "controls": "Left/Right or A/D move, Space/W/Up jump (hold for higher), R restart, P or Esc pause, M mute. On phones: on-screen left/right pad, JUMP, pause and restart buttons.",
+  "input": {
+    "keyboard_mouse": true,
+    "gamepad": false,
+    "touch": true,
+    "tilt": false
+  },
+  "orientation": "landscape",
+  "play": {
+    "root": ".",
+    "entry": "index.html"
+  },
+  "thumbnail": "media/thumbnail.png",
+  "screenshots": [
+    "media/screenshot-1.png",
+    "media/screenshot-2.png",
+    "media/screenshot-3.png",
+    "media/screenshot-4.png"
+  ],
+  "lineage": {
+    "kind": "update",
+    "based_on": {
+      "generation": "01m4etx7qvcxvx1v17scdpbw37",
+      "version": 1
+    }
+  },
+  "provenance": {
+    "process": "iterated",
+    "orchestrator": {
+      "harness": "Claude Code",
+      "model": "Opus 5.5",
+      "model_id": "claude-opus-5-5"
+    },
+    "subagent_models": [],
+    "notes": "Built in Claude Code with Opus 5.5, from a human-chosen concept (a Level Devil-style rage platformer) and design answers (character, art style, taunt tone, touch support). All art and sound are procedural. Levels are verified beatable by recorded-input replays in tools/verify-levels.mjs. Screenshots are real frames from bot-driven (Playwright keyboard) play against arcade dev. First release ships levels 1-6; 7-12 are planned."
+  }
+}
